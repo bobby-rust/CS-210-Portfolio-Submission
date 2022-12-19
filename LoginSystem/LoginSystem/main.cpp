@@ -171,7 +171,6 @@ void CreateUser(User user)
 	data << "\nusername: " << user.GetUsername() << " password: " << user.GetPassword();
 	// Close file
 	data.close();
-	InitializeUsers(); // Reinitialize users after modification
 }
 
 bool CheckValidUserInfo(string username, string password, vector<User> users)
@@ -215,20 +214,21 @@ int main()
 	User currUser;
 	int currUserLoc = -1;
 	string userInput;
-	vector<User> users = InitializeUsers();
 	bool isUserDone = false;
-
-	// Uncomment this loop to print all users in the data file
-	/*
-	for (int i = 0; i < users.size(); i++)
-	{
-		users[i].PrintUser();
-		cout << endl;
-	}
-	*/
 
 	while (!isUserDone)
 	{
+		vector<User> users = InitializeUsers();
+
+		// Uncomment this loop to print all users in the data file
+		/*
+		for (int i = 0; i < users.size(); i++)
+		{
+			users[i].PrintUser();
+			cout << endl;
+		}
+		*/
+
 		// Print menu and get user selection
 		PrintMenu();
 		userInput = GetUserInput("Enter your selection as a number 1, 2, or 3.\n");

@@ -22,5 +22,4 @@ public:
 	// Constructors
 	User();
 	User(string t_username, string t_password);
-	
 };
