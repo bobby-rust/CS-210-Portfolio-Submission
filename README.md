@@ -5,7 +5,7 @@ Summarize the project and what problem it was solving.
 This is a simple login system implemented in C++. This login system allows users to persist data in local storage between subsequent executions of the program.
 
 What did you do particularly well?
-I commented the code well so it is easy for people to check out the code and understand what it does without knowing all of the little implementation details. It will also be easier for me to come back after I've forgotted how everything is implemented and work on the project with ease. I also utilized a user class such that adding additional functionality will be much easier.
+I commented the code well so it is easy for people to check out the code and understand what it does without knowing all of the little implementation details. It will also be easier for me to come back after I've forgotted how everything is implemented and work on the project with ease. I also utilized a user class so that adding additional functionality will be much easier.
 
 Where could you enhance your code? How would these improvements make your code more efficient, secure, and so on?
 I could modularize the program better. I could break up some of the functions into different files so that the main file will not be so cluttered and so that it's easier to find which function you'd like to work on, as well as test individual functions easier.
